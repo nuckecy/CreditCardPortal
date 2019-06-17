@@ -1,1 +1,1 @@
-# CreditCardPortal
+# Sterling Bank Credit Card Portal
