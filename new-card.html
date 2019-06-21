@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Jun 19 2019 14:33:06 GMT+0000 (UTC)  -->
+<!--  This site was created by Sterling Bank Plc. https://www.sterling.ng  -->
+<!--  Last Published: Fri Jun 21 2019 04:36:34 GMT+0000 (UTC)  -->
 <html data-wf-page="5d09c1a1887607063d5ccbfb" data-wf-site="5d02a6534d3326493180ed74">
 <head>
   <meta charset="utf-8">
   <title>New Card</title>
   <meta content="New Card" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
+  <meta content="Sterling Bank" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/creditcard-portal.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/cc-portal.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]  }});</script>
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
@@ -62,13 +62,50 @@
                 <div class="w-form">
                   <form id="email-form" name="email-form" data-name="Email Form">
                     <div class="w-layout-grid form_grid">
-                      <div class="field_holder"><label for="Card-Limit" class="label">Preferred Card Limit</label><input type="number" class="input_forms w-input" maxlength="256" name="Card-Limit" data-name="Card Limit" id="Card-Limit" required=""></div>
-                      <div class="field_holder"><label for="Bank-Name" class="label">Pick Up Branch</label><select id="Bank-Name-2" name="Bank-Name-2" data-name="Bank Name 2" required="" class="select_forms w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
-                      <div class="field_holder"><label for="Other-Bank" class="label">Job Changes within 5 years</label><select id="Bank-Name-2" name="Bank-Name-2" data-name="Bank Name 2" required="" class="select_forms w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
-                      <div class="field_holder">
-                        <div class="field_holder"><label for="Bank-Name-2" class="label">Number of dependents</label><select id="Bank-Name-2" name="Bank-Name-2" data-name="Bank Name 2" required="" class="select_forms w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+                      <div id="w-node-1e0677452811-3d5ccbfb" class="field_holder radio-spacer"><label for="Card-Limit-3" class="label">Is your Account Domiciled</label>
+                        <div class="w-radio"><input type="radio" data-name="Radio" id="radio" name="radio" value="Radio" class="w-radio-input"><label for="radio" class="radio-label w-form-label">Yes, my account is domiciled in Sterling</label></div>
+                        <div class="w-radio"><input type="radio" data-name="Radio 2" id="radio-2" name="radio" value="Radio" class="w-radio-input"><label for="radio-2" class="radio-label w-form-label">No, my account is not domiciled</label></div>
                       </div>
-                    </div><input type="submit" value="Verify" data-wait="Please wait..." class="submit-button w-button"></form>
+                      <div id="w-node-3044bf2e3048-3d5ccbfb" class="field_holder">
+                        <label for="Card-Limit" class="label">Preferred Card Limit</label>
+                        <input type="number" class="input_forms w-input" maxlength="256" name="Card-Limit" data-name="Card Limit" id="Card-Limit" required="">
+                      </div>
+                      <div id="w-node-3044bf2e304c-3d5ccbfb" class="field_holder">
+                        <label for="Bank-Name" class="label">Pick Up Branch</label>
+                        <select id="Bank-Name-2" name="Bank-Name-2" data-name="Bank Name 2" required="" class="select_forms w-select">
+                          <option value="">Select one...</option>
+                          <option value="First">First Choice</option>
+                          <option value="Second">Second Choice</option>
+                          <option value="Third">Third Choice</option>
+                        </select>
+                      </div>
+                      <div id="w-node-3044bf2e3050-3d5ccbfb" class="field_holder">
+                        <label for="Other-Bank" class="label">Job Changes within 5 years</label>
+                        <select id="Bank-Name-2" name="Bank-Name-2" data-name="Bank Name 2" required="" class="select_forms w-select">
+                          <option value="">Select one...</option>
+                          <option value="First">First Choice</option>
+                          <option value="Second">Second Choice</option>
+                          <option value="Third">Third Choice</option>
+                        </select>
+                      </div>
+                      <div id="w-node-3044bf2e3054-3d5ccbfb" class="field_holder">
+                        <div class="field_holder">
+                          <label for="Bank-Name-2" class="label">Number of dependents</label>
+                          <select id="Bank-Name-2" name="Bank-Name-2" data-name="Bank Name 2" required="" class="select_forms w-select">
+                            <option value="">Select one...</option>
+                            <option value="First">First Choice</option>
+                            <option value="Second">Second Choice</option>
+                            <option value="Third">Third Choice</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div id="w-node-c78c4a28201c-3d5ccbfb" class="field_holder">
+                        <label for="Card-Limit-2" class="label">Upload PaySlip</label>
+                        <input type="file" class="input_forms w-input" name="fileToUpload" id="Card-Limit-2" required="">
+                      </div>
+                    </div>
+                    <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button w-button">
+                  </form>
                   <div class="w-form-done">
                     <div>Thank you! Your submission has been received!</div>
                   </div>
@@ -91,7 +128,7 @@
     </div>
   </div>
   <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 </html>
